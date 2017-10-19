@@ -1,2 +1,2 @@
-# githubdemo
-Demo on how to use GitHub for Wireframe C. 
+# Cavalier Symphony Orchestra Website
+by Sarah and Lizzie
