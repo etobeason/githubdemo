@@ -9,16 +9,12 @@ body, html {
 }
 
 video { 
+    left: 50%;
+    max-width: 100%;
     position: absolute;
     top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 50%;
-    width: auto;
-    height: auto;
-    z-index: -10;
-    transform: translateX(-50%) translateY(-50%);
-  transition: 1s opacity;
+    transform: translate(-50%, -50%);
+    z-index: -100;
 }
 .stopfade { 
    opacity: .5;
@@ -29,19 +25,26 @@ h1 {
   text-transform: uppercase;
   margin-top: 0;
   letter-spacing: .3rem;
-align-content: center;
-
+  margin-left: 300px;
 }
 
 a {
-  display: lbock;
+  display: block;
+  width: 100px;
   color: #fff;
   text-decoration: none;
   background:rgba(0,0,0,0.5);
   padding: .5rem;
   transition: .6s background; 
+ font-size: 20px;    
 }
-.CSO{
+.CSO img{
+ margin-left: 450px;
     display: block;
+    
+}
+.CSO a{
+      margin-left: 770px;
+    width: 118px;
     
 }
