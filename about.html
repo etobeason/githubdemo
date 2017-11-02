@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title>about</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="style2.css">
+<link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GET INVOLVED</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> AUDITIONS</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  <div class= "grabber">
+  	<h1><font color="gold">meet the leaders</font></h1>
+  	<style>
+
+  	</style>
+  </div>
+
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="calvert.JPG" style="width:100%" onclick="onClick(this)" alt="Caleb Calvert: President">
+      <img src="gong.JPG" style="width:100%" onclick="onClick(this)" alt="Crystal Gong: Vice President">
+      <img src="barton.JPG" style="width:100%" onclick="onClick(this)" alt="Ben Barton: Performance Director">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="brown.JPG" style="width:100%" onclick="onClick(this)" alt="Austin Brown: Performance Director">
+      <img src="zaleski.JPG" style="width:100%" onclick="onClick(this)" alt="Melissa Zaleski: Concert Manager">
+      <img src="gonzales.JPG" style="width:100%" onclick="onClick(this)" alt="Crystall Gonzales: Social Chair">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="bright.JPG" style="width:100%" onclick="onClick(this)" alt="Abby Bright: Social Chair">
+      <img src="hilzendeger.JPG" style="width:100%" onclick="onClick(this)" alt="Michael Hilzendeger: Treasurer">
+      <img src="cruser.JPG" style="width:100%" onclick="onClick(this)" alt="Virginia Cruser: Secretary">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="dupont.JPG" style="width:100%" onclick="onClick(this)" alt="Jinho Dupont: Recruitment Chair">
+      <img src="springfield.JPG" style="width:100%" onclick="onClick(this)" alt="Amy Springfield: Recruitment Chair">
+      <img src="pappas.JPG" style="width:100%" onclick="onClick(this)" alt="Elizabeth Pappas: Historian">
+    </div>
+  </div>
+
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="max-width:1600px style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
+
